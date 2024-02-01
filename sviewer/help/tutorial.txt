@@ -1,0 +1,66 @@
+Absorption line analysis:
+
+1. Load spectrum or list of spectra
+   a. Load the 
+   b. Set the resolution of the spectrum (in the last column), by pressing <F3> or menu View/Exposures
+    
+2. Construct continuum:
+   a. B-splain:
+       to add points for B-splain: 
+          - mouse right click while <b> key is hold.  
+          - short press <b> key while fixed mouse
+       to remove points for B-splain:
+          - hold <b> key. Choose to region using Left button of mouse
+          - hold <b> key. Press Right Button of Mouse. The closer to cursor position splain point will be removed.
+2'. Normalize the spectrum (unnecessary, but reasonable):
+   a. Pressing <n> button or Normalize button in the bottom panel - will switch between Normalize and Nonnormalized view
+             
+3. Construct fit model.
+   a. Press Ctrl+f.
+   b. Choose parameters in opened window
+   c. Add absorption system by pressing Add System
+   d. Add species to system by typing species name (like OI, H2j0, e.t.c.) or select in <add species> window. 
+   e. Select appropriate intervals of min, max for the fitting parameters, e.g. z, b, N, e.t.c
+    
+4. Fit:
+   press Fit button at the bottom panel, or in the Fit Menu.
+
+5. Made figures:
+   a. Press Ctrl + L or Main Menu / View / Plot lines
+   b. Choose lines or regions:
+      line can be seleted by
+         - double click on line indicator
+         - writing in the window at right-hand side in Plot lines window
+         - choosing from the list at the bottom of right-hand side
+      selected lines will be highlighted by red color
+      you can specify yaxis scale for specific line just adding it to the line, like "FeI2434 0.5 1.2"  
+      
+   c. Set parameters of Matplotlib figures
+-----------------------------
+Optional:
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Working with Doublets:
+To add Doublet use <u> key and left mouse click: 
+    1. Press <u> key and hold it during the following actions.
+    2. Set the position of the first line in doublet by <Left mouse Click>. It will be shown by green vertical line.
+    3. The possible positions of the second lines in doublet will be highlighted by red lines.
+    4. Select second line in doublet <Left mouse Click>. 
+    5. If the second and first clicked satisfy some tollerance ratio, than double will be formed.
+
+To shift doublet position: Hold <Shift> and drag doublet by its label.
+To delete doublet: Hold <Ctrl> and click on the doublet label.
+To set redshift value for other indicators: <Double Left Mouse Click> on the doublet label.  
+
+                       
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Working with regions:  
+- to construct         :         hold <r> Key and select region by left mouse button
+- to adjust boundaries :         hold SHIFT and move boundaries by mouse
+- to drag              :         hold SHIFT and move by mouse
+- to remove            :         hold CTRL and click on the region
+- to collapse/expand   :         left mouse button double click on the region 
+
+
+
